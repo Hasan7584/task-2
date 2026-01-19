@@ -7,9 +7,7 @@
 body{
       max-width: 1600px;
   margin: 0 auto;
-  /* background-color: #1A0B2E;; */
 }
-
 
 .hamburger-menu{
     display: none;
@@ -18,7 +16,7 @@ body{
     display: flex;
 }
 
-   .navber {
+   .navber{
     justify-content: space-around;
     align-items: center;
     background-color: #412567;  
@@ -51,45 +49,38 @@ body{
 .nav-link{
     text-decoration: none;
     font-weight: 500;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;  
 }
 .navbar{
     max-width: 1600px;
     margin: 0px auto
 
 }
-/* start */
+
+/* navber kas start hoise  */
+
+
 .nav-btn:hover{
      background: linear-gradient(90deg,green 0%,red 51%,#9100F8 100%);
-    transform: translateY(-3px);
+    font-size: 1rem;
     box-shadow: 0 8px 20px rgba(106, 63, 160, 0.4);
-}
-
-.nav-btn:hover img{
-    transform: translateX(5px) scale(1.1);
 }
 
 .btn-2:hover{
     background-color: red;
-    transform: translateY(-3px);
+    font-size: 1rem;
     box-shadow: 0 8px 20px rgba(106, 63, 160, 0.4);
 }
 
-.btn-2:hover img{
-    transform: translateX(5px) scale(1.1);
-}
 .btn-1:hover{
      background: linear-gradient(90deg,green 0%,red 51%,#9100F8 100%);
-    transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(106, 63, 160, 0.4);
+    font-size: 2rem;
 }
 
-.btn-1:hover img{
-    transform: translateX(5px) scale(1.1);
-}
 
-/* animation */
+
+/* animation kas korlam */
 .nav-btn{
     border-radius: 30px;
     padding: 16px 12px;
@@ -110,6 +101,21 @@ body{
 /* 2nd part start hoise mic use part kor */
 
 
+.circle-btn {
+    position: absolute;
+    right: -20px;  
+    top: 20%;
+    padding: 10px 20px;
+    background-color: #00ff88;
+    color: black;
+    border-radius: 25px;   
+}
+
+ .circle-btn:hover{
+font-size: 2rem;
+ background: linear-gradient(90deg,green 0%,red 51%,#9100F8 100%);
+color: black;
+ }
 .mic-main-container{
      display: flex; 
      align-items: center; 
@@ -215,7 +221,6 @@ color: #FFFFFF;
     gap: 100px;
     text-align: center;
     justify-content: center;
-    /* margin-bottom: 100px; */
     padding-bottom: 100px;
 }
 .icon-text{
@@ -230,6 +235,7 @@ color: #FFFFFF;
 display: flex;
 flex-direction: column;
 align-items: center;
+
    
 }
 .card-title{
@@ -273,23 +279,17 @@ align-items: center;
     gap: 20px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(6,1fr);
-   padding: 40px;
- 
+   padding:  40px;
 }
 
 .normal-layout{
     grid-column: span 2;
     grid-row: span 1;
-  
-    
 }
 .high-layout{
     grid-column: span 1;
     grid-row:span 2 ;
 }
-
-
-
 
 /* video-title start hoise */
 
@@ -298,7 +298,6 @@ align-items: center;
     font-size: 2.8rem;
     color: #FAFAFA;
     text-align: center;
-    /* margin-top: 100px; */
     padding-top: 50px;
 }
 .video-text{
@@ -332,7 +331,6 @@ align-items: center;
     display: flex;
     gap: 10px;
     margin-top: 50px;
-    /* width: 1600px; */
     
 }
 
@@ -342,11 +340,7 @@ align-items: center;
     background-color: #351165;
     border-radius: 20px;
 margin: 0px 160px;
-
-
 }
-
-
 
 .host-main-title{
     text-align: center;
@@ -354,14 +348,12 @@ margin: 0px 160px;
     font-size: 2.5rem;
     font-weight: bold;
     padding-top: 100px;
-    /* margin-top: 100px; */
 }
 
 .host-title{
     color: #FFFFFF;
     font-size: 2rem;
-    font-weight: bold;
-  
+    font-weight: bold;  
 }
 
 .host-text{
@@ -396,6 +388,7 @@ margin: 0px 160px;
 }
 .footer-bg{
     padding-bottom: 40px;
+    
 }
 
 
@@ -430,7 +423,6 @@ margin: 0px 160px;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
-   /* padding-top: 30px; */
     justify-content: center;
     
 }
@@ -457,7 +449,6 @@ footer{
     background-size: cover;
     background-position: center;
     padding: 100px 20px; 
-  
 }
 
 .hamburger-menu{
@@ -470,18 +461,6 @@ footer{
 
 @media screen and (max-width:576px){
 
-
-/* footer section use korsi */
-    /* .navber {
-      flex-direction: column;
-      gap: 15px;
-      padding: 10px 0;
-  } */
-  
-  /* .nav-links {
-      flex-direction: column;
-      gap: 10px;
-  } */
 .navber{
     display: flex;
     justify-content: space-between;
@@ -547,10 +526,8 @@ flex-direction: column;
  gap: 15px;
  height: 1600px;
  gap: 20px;
-
+padding-bottom: 50px;
 }
-
-
 
   /* Video section */
 
@@ -561,23 +538,28 @@ flex-direction: column;
 .banner-text-2{
     font-size: 0.6rem;
     padding: 0 auto;
-   
  
 }
   .but{
     display: none;
 }
+.video-title{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
   .video-main-text{
     padding-top: 100px;
+  
   }
   .video-main-container {
     display: grid;
   grid-template-columns: repeat(1,1fr);
       gap: 20px;
       align-items: center;
-     
       margin: 0 auto;
+      
   }
+ 
   .video-card-1 iframe {
       width: 100%;
   }
@@ -606,19 +588,15 @@ flex-direction: column;
     width: 100%;
     display: flex;
     flex-direction: column;
-   
      justify-content: start;
 
 }
-
-
 
 .host-banner-container {
       flex-direction: column;
       margin: 20px;
       padding: 10px;
   }
-
 
 .host-main-title{
     font-size: 1.5rem;
@@ -646,21 +624,18 @@ flex-direction: column;
 }
 
 
-
-
 /* footer start hoise */
 
   .footer-title {
-        font-size: 1.6rem;   /* smaller title */
+        font-size: 1.6rem;   
         padding-bottom: 10px;
     }
        .footer-logo {
-                      display: grid;
-                      grid-template-columns: repeat(2,1fr);
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
         font-size: 1rem;
         padding: 10px 10px;
         gap: 10px;
-        
         width:100%;
         align-items: center;
         justify-content: center;
@@ -680,6 +655,10 @@ flex-direction: column;
         font-size: 0.8rem;
         margin-top: 20px;
         line-height: 18px;
+    }
+    .hasan{
+        padding-top: 200px;
+      
     }
 }
 
