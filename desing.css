@@ -9,6 +9,11 @@ body{
   margin: 0 auto;
   /* background-color: #1A0B2E;; */
 }
+
+
+.hamburger-menu{
+    display: none;
+}
 .display-flex{
     display: flex;
 }
@@ -16,16 +21,13 @@ body{
    .navber {
     justify-content: space-around;
     align-items: center;
-    background-color: #412567;
-    
+    background-color: #412567;  
 }
 
 
 .brand{
     color: #FAFAFA;
-    font-size: 2rem;
-   
-    
+    font-size: 2rem;     
 }
 
 
@@ -57,6 +59,37 @@ body{
     margin: 0px auto
 
 }
+/* start */
+.nav-btn:hover{
+     background: linear-gradient(90deg,green 0%,red 51%,#9100F8 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(106, 63, 160, 0.4);
+}
+
+.nav-btn:hover img{
+    transform: translateX(5px) scale(1.1);
+}
+
+.btn-2:hover{
+    background-color: red;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(106, 63, 160, 0.4);
+}
+
+.btn-2:hover img{
+    transform: translateX(5px) scale(1.1);
+}
+.btn-1:hover{
+     background: linear-gradient(90deg,green 0%,red 51%,#9100F8 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(106, 63, 160, 0.4);
+}
+
+.btn-1:hover img{
+    transform: translateX(5px) scale(1.1);
+}
+
+/* animation */
 .nav-btn{
     border-radius: 30px;
     padding: 16px 12px;
@@ -427,25 +460,43 @@ footer{
   
 }
 
+.hamburger-menu{
+    position: relative;
+    display: none;
+    right: 10px;
+}
+
+
 
 @media screen and (max-width:576px){
 
 
-   
-    
-
 /* footer section use korsi */
-    .navber {
+    /* .navber {
       flex-direction: column;
       gap: 15px;
       padding: 10px 0;
-  }
-
-  .nav-links {
+  } */
+  
+  /* .nav-links {
       flex-direction: column;
       gap: 10px;
+  } */
+.navber{
+    display: flex;
+    justify-content: space-between;
+}
+  .hamburger-menu{
+    display: block;
   }
-
+     
+  .nav-links{
+    display: none;
+  }
+  .nav-btn{
+    display: none;
+  }
+ 
   .nav-item {
       margin-right: 0;
   }
