@@ -23,6 +23,7 @@ body{
 
 .brand{
     color: #FAFAFA;
+    font-size: 2rem;
    
     
 }
@@ -240,7 +241,7 @@ align-items: center;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(6,1fr);
    padding: 40px;
-   
+ 
 }
 
 .normal-layout{
@@ -355,10 +356,16 @@ margin: 0px 160px;
 
 
 
-footer{
-     background-color: #1A0B2E;
-      padding-top: 100px;
+.footer-title{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 20px;
 }
+.footer-bg{
+    padding-bottom: 40px;
+}
+
+
 .brand-2{
     font-weight: bold;
     font-size: 2.8rem;
@@ -385,8 +392,14 @@ footer{
 }
 .footer-logo{
     display: flex;
-    gap: 40px;
+    gap: 50px;
     margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+   /* padding-top: 30px; */
+    justify-content: center;
+    
 }
 .footer-last-text{
     color: #FAFAFA;
@@ -397,7 +410,6 @@ footer{
 }
 
 .board{
-    /* background-color:red ; */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -406,13 +418,23 @@ footer{
     border: 2px solid #533C72;
 }
 
-
+footer{
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px; 
+  
+}
 
 
 @media screen and (max-width:576px){
+
+
+   
     
 
-
+/* footer section use korsi */
     .navber {
       flex-direction: column;
       gap: 15px;
@@ -460,7 +482,11 @@ footer{
 .icon{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    padding: 30px 20px ;
+    /* padding: 30px 20px ; */
+    gap: 20px;
+}
+.card-title{
+    font-size: 1.6rem;
 }
 
 .card-container{
@@ -478,6 +504,15 @@ flex-direction: column;
   /* Video section */
 
 /* br tag ke remove korar jono use hoise  */
+.mic-text-2{
+    font-size: 0.7rem;
+}
+.banner-text-2{
+    font-size: 0.6rem;
+    padding: 0 auto;
+   
+ 
+}
   .but{
     display: none;
 }
@@ -489,7 +524,8 @@ flex-direction: column;
   grid-template-columns: repeat(1,1fr);
       gap: 20px;
       align-items: center;
-      padding:5px 20px; 
+     
+      margin: 0 auto;
   }
   .video-card-1 iframe {
       width: 100%;
@@ -563,7 +599,37 @@ flex-direction: column;
 
 /* footer start hoise */
 
+  .footer-title {
+        font-size: 1.6rem;   /* smaller title */
+        padding-bottom: 10px;
+    }
+       .footer-logo {
+                      display: grid;
+                      grid-template-columns: repeat(2,1fr);
+        font-size: 1rem;
+        padding: 10px 10px;
+        gap: 10px;
+        
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .board {
+        padding: 8px;             
+        border-width: 1.5px;
+    }
 
+    footer {
+        padding: 40px 10px;      
+    }
+
+    .footer-last-text {
+        font-size: 0.8rem;
+        margin-top: 20px;
+        line-height: 18px;
+    }
 }
 
 
