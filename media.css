@@ -1,17 +1,24 @@
-/* @media screen and (min-width:577px) and (max-width:992px){
-    
 
 
-    .navber{    
-    flex-direction: column;
-    gap: 20px;
+.rotate{
+    padding: 16px 12px;
+     font-size: 1rem;
+     border: none;
+     background-color: red;
+     color: #FFFFFF; 
+    border-radius: 30px;
+     cursor: pointer;
+     animation: spin 5s linear infinite;   
+   
 }
- .card-container {
-        grid-template-columns: repeat(2, 1fr);
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
     }
-} */
-
-
+    to{
+        transform: rotate(90deg);
+    }
+}
 
 
 @media screen and (min-width:577px) and (max-width: 992px) {
