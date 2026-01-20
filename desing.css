@@ -111,11 +111,25 @@ body{
     border-radius: 25px;   
 }
 
- .circle-btn:hover{
-font-size: 2rem;
- background: linear-gradient(90deg,green 0%,red 51%,#9100F8 100%);
-color: black;
- }
+.rotate{
+    padding: 16px 15px;
+     font-size: 1rem;
+     border: none;
+     background-color: #00FF88;
+     color: black; 
+    border-radius: 30px;
+     cursor: pointer;
+     animation: spin 3s linear infinite;   
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .mic-main-container{
      display: flex; 
      align-items: center; 
