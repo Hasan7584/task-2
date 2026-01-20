@@ -1,0 +1,114 @@
+/* @media screen and (min-width:577px) and (max-width:992px){
+    
+
+
+    .navber{    
+    flex-direction: column;
+    gap: 20px;
+}
+ .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+
+
+
+@media screen and (min-width:577px) and (max-width: 992px) {
+
+    /*  NAVBAR PART START KORSI */
+   
+
+    .navber {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       
+        padding: 15px 20px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mic-container-image {
+        margin-top: 30px;
+    }
+
+    .button {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    
+    .icon {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    /* CARDS PART START KORSI  */
+  
+
+    .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 992px;    
+    padding: 30px;
+    
+}
+    .high-layout {
+        grid-column: span 2;
+    }
+    .card-1 img {
+        width: 60px;
+    }
+    .card-h {
+        font-size: 18px;
+    }
+    .card-p {
+        font-size: 10px;
+    }
+
+    /*  VIDEOS PART START HOISE */
+    .video-main-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    
+    .image {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .host-text {
+        padding: 0 15px;
+ 
+    }
+
+    /*  FOOTER  STATR KORSI*/
+    .footer-logo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        
+    }
+
+    .footer-last-text {
+        text-align: center;
+    }
+}
